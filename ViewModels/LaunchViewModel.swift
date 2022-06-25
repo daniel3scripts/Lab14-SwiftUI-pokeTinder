@@ -15,7 +15,7 @@ class LaunchViewModel: ObservableObject {
 
     init() {
 
-        appState.currentScreen = .home
+        appState.currentScreen = .login
     }
     
 }

@@ -18,13 +18,14 @@ struct MyApp_iOS: App {
             case .launch:
                 LaunchView()
                     .environmentObject(appState)
-            case .home:
-                ContentView()
+                
+            case .login:
+                SignInView()
                     .environmentObject(appState)
-            case .options:
-                ContentView()
-            case .profile:
-                ContentView()
+            case .main:
+                MainView()
+                    .environmentObject(appState)
+            
             }
         }
     }
